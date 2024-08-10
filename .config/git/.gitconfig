@@ -1,0 +1,10 @@
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+[user]
+	name = Ron Deppe
+	email = 97666744+RonDeppe@users.noreply.github.com
+[core]
+	editor = \"C:\\Users\\Ron20\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    // Parakeets by Linda Ball: https://www.asciiart.eu/animals/birds-land
+        "source": "\n         \\\\\n \\\\      (o>\n (o>     //\\\n_(()_____V_/_____\n ||      ||\n         ||",
+        "type": "data",
+        "position": "left",
+        "padding": {
+            "right": 2
+        }
+    },
+  "display": {
+      "separator": "",
+      "key": {
+          "width": 15
+      }
+  },
+  "modules": [
+      {
+          // draw borders first to make colors of left and right border consistant
+          "key": " user",
+          "type": "title",
+          "format": "{user-name}",
+          "keyColor": "31"
+      },
+      {
+          "key": "󰇅 pc",
+          "type": "title",
+          "format": "{host-name}",
+          "keyColor": "32"
+
+      },
+      {
+          "key": "{icon} distro",
+          "type": "os",
+          "keyColor": "34"
+      },
+      {
+          "key": " term",
+          "type": "terminal",
+          "keyColor": "31"
+      },
+      {
+          "key": " shell",
+          "type": "shell",
+          "keyColor": "32"
+      },
+      {
+          "key": "󰍛 cpu",
+          "type": "cpu",
+          "showPeCoreCount": true,
+          "keyColor": "33"
+      },
+      {
+        "key": "󰍛 gpu",
+        "type": "gpu",
+        "keyColor": "33"
+    },
+      {
+          "key": "󰉉 disk",
+          "type": "disk",
+          "folders": "/",
+          "keyColor": "34"
+      }
+  ]
+}
