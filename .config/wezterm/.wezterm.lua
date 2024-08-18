@@ -12,12 +12,12 @@ local mux = wezterm.mux
 local config = wezterm.config_builder()
 
 -- Use powershell so we can use unix commands such as "ls" and "clear".
--- config.default_prog = { 'powershell.exe', '-NoExit', '-Command', 'fastfetch; Write-Host "`n"' }
-config.default_prog = { 'powershell.exe' }
+config.default_prog = { 'C:\\Program Files\\PowerShell\\7\\pwsh.exe' }
 config.font = wezterm.font 'JetBrains Mono'
 config.font_size = 12
 config.color_scheme = 'Catppuccin Macchiato'
 config.enable_tab_bar = false
+-- RESIZE so we can open the window as maximized without it overlapping the taskbar.
 config.window_decorations = "RESIZE"
 config.window_padding = {
   top = 0,
